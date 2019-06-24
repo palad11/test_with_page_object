@@ -1,6 +1,8 @@
-from .base_page import BasePage
-from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+
+from .base_page import BasePage
+
 
 class LoginPage(BasePage):
     def should_be_login_page(self):
