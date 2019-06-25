@@ -33,3 +33,6 @@ class BasePageLocators(object):
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     CART_LINK = (By.CSS_SELECTOR, "span > a")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+
+class CartPageLocators(object):
+    CART_EMPTY_TEXT = (By.CSS_SELECTOR, '#content_inner > p')
