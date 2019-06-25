@@ -15,7 +15,7 @@ class TestUserAddToCartFromProductPage(object):
         self.link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
         page = LoginPage(browser, self.link)
         page.open()
-        page.register_new_user(str(random.randint(100000000, 900000000)) + '@fakemail.com', 'jopa12345')
+        page.register_new_user(str(random.randint(100000000, 900000000)) + '@fakemail.com', 'xowa12345')
         page.should_be_authorized_user()
 
     @pytest.mark.need_review
