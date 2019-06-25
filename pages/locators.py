@@ -7,6 +7,16 @@ class MainPageLocators(object):
 
 class LoginPageLocators(object):
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    REGISTER_FORM_WHOLLY = (By.CSS_SELECTOR, "#register_form")
+    REGISTER_FORM_PASSWORD1 = (By.CSS_SELECTOR, "#id_registration-password1")
+    REGISTER_FORM_PASSWORD2 = (By.CSS_SELECTOR, "#id_registration-password2")
+    REGISTER_FORM_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
+    REGISTER_FORM_BUTTON = (By.CSS_SELECTOR, "#register_form > button")
+    LOGIN_FORM_WHOLLY = (By.CSS_SELECTOR, "#login_form")
+    LOGIN_FORM_USERNAME = (By.CSS_SELECTOR, ".form-control#id_login-username")
+    LOGIN_FORM_PASSWORD = (By.CSS_SELECTOR, ".form-control#id_login-password")
+    LOGIN_FORM_BUTTON = (By.CSS_SELECTOR, "#login_form > button")
+    LOGIN_FORM_PASSWORD_RESET = (By.CSS_SELECTOR, "#login_form > p > a")
 
 
 class ProductPageLocators(object):

@@ -1,2 +1,2 @@
-pytest
-selenium
+pytest==3.3.1
+selenium==3.14.0
