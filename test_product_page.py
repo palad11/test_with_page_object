@@ -12,8 +12,8 @@ class TestUserAddToCartFromProductPage(object):
 
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
-        self.link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
-        page = LoginPage(browser, self.link)
+        link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
+        page = LoginPage(browser, link)
         page.open()
         page.register_new_user(str(random.randint(100000000, 900000000)) + '@fakemail.com', 'xowa12345')
         page.should_be_authorized_user()
